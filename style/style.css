@@ -1,6 +1,24 @@
-.container-sidebar{
-    display: flex;
+aside{
     flex-direction: column;
     height: 100vh;
-    background-color: aqua;
+    width: 150vw;
+    overflow: auto;
+    display: flex;
+    background-color: #10273D;
+}
+
+#header-main{
+    height: 100px;
+    width: 90vw;
+    background-color: #1C71E8;
+}
+
+#boolean{
+    height: 200px;
+    background-color: #1C71E8;
+}
+
+.my_bg-aside{
+    background-color: #13283F;
+    height: 300px;
 }
