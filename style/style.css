@@ -7,7 +7,7 @@ body {
 aside{
     flex-direction: column;
     height: calc(100vh - 60px);
-    width: 150vw;
+    width: 150px;
     overflow: auto;
     display: flex;
     background-color: #10273D;
@@ -15,8 +15,6 @@ aside{
 }
 
 #header-main{
-    height: 100px;
-    width: 90vw;
     background-color: #1C71E8;
 }
 
@@ -37,12 +35,28 @@ aside{
     height: 60px;
 }
 
-nav img{
-    width: 100%;
+.boolean{
+    font-size: 30px;
+}
+
+.my_circle{
+    background-color: #165BBA;
 }
 
 .button{
     color: #5A5858;
+}
+
+
+aside i{
+    font-size: 15px;
+    padding-right: .5rem;
+}
+
+main {
+    width: calc(100vw - 150px);
+    height: calc(100vh - 60px);
+    overflow-y: auto;
 }
 
 li{
