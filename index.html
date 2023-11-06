@@ -14,11 +14,11 @@
 
 <body>
     
+    <!--Navbar-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary"">
         <div class="container-fluid m-2">
 
             <div>
-                <img src="./img/mobile-logo.png" alt="Logo mobile Boolean" class="logo d-lg-none">
                 <img src="./img/logo.svg" alt="Logo desktop Boolean" class="d-none d-lg-inline-block">
             </div>
 
@@ -32,7 +32,7 @@
                     <li class="d-none d-lg-inline-block pe-3"><i class="fa-solid fa-list"></i></li>
                     <li class="d-none d-lg-inline-block pe-3"><i class="fa-solid fa-circle-question"></i></li>
                     <li class="d-none d-lg-inline-block pe-3"><i class="fa-solid fa-ellipsis-vertical"></i></li>
-                    <li class="pe-3"><i class="fa-solid fa-bell"></i></li>
+                    <li class="d-none d-lg-inline-block"><i class="fa-solid fa-bell"></i></li>
                 </ul>
             </div>
         </div>
@@ -40,24 +40,33 @@
 
     <section class="d-flex">
 
+        <!--Aside-->
         <aside>
             <div class="container text-white">
-                <div class="row justify-content-between">
+                <div class="row justify-content-between text-center">
                     <ul class="mt-4">
-                        <li> <i class="fa-solid fa-house"></i> Home</li>
-                        <li> <i class="fa-solid fa-chart-simple"></i> Stats</li>
-                        <li> <i class="fa-solid fa-signal"></i> Signals</li>
+                        <li class="d-none d-lg-block mb-3"> <i class="fa-solid fa-house"></i> Home</li>
+                        <li class="d-lg-none small"><i class="fa-solid fa-house"></i> </li>
+                        <li class="d-none d-lg-block mb-3"> <i class="fa-solid fa-chart-simple"></i> Stats</li>
+                        <li class="d-lg-none small"><i class="fa-solid fa-chart-simple"></i> </li>
+                        <li class="d-none d-lg-block mb-3"> <i class="fa-solid fa-signal"></i> Signals</li>
+                        <li class="d-lg-none small"><i class="fa-solid fa-signal"></i>  </li>
                     </ul>
                 </div>
-                <div class="row mt-auto">
-                        <ul class="ms-auto">
-                            <li><i class="fa-solid fa-gear"></i> Admin</li>
-                        </ul>
+                <div class="row text-center my_padding">
+                    <ul>
+                        <li class="d-none d-lg-inline"><i class="fa-solid fa-gear"></i> Admin</li>
+                        <li class="d-lg-none small"><i class="fa-solid fa-gear"></i> </li>
+                    </ul>
                 </div>
             </div>
         </aside>
 
+
+        <!--Inizio Main-->
     <main>
+
+        <!--Header del Main-->
         <header id="header-main" class="col-12">
             <div class="container">
                 <div class="row text-white">
@@ -75,7 +84,7 @@
                                 <span class="badge rounded-pill my_circle fw-normal d-none d-xl-inline-block">Boolen blog app</span>
                             </div>
                     </div>
-                    <div class="col-4 mt-2">
+                    <div class="col-12 col-md-4 mt-2">
                         <p>
                             Studenti online negli ultimi 30 minuti
                         </p>
@@ -83,7 +92,7 @@
                             125
                         </h2>
                     </div>
-                    <div class="col-2 mt-3">
+                    <div class="col-12 col-md-2 mt-3">
                         <p>
                             Nuovo studente
                         </p>
@@ -91,6 +100,8 @@
                 </div>
             </div>
         </header>
+
+        <!--Inizio Card-->
             <div class="container overflow-scroll">
                 <div class="row">
                     <div class="col-12 col-lg-8">
@@ -135,59 +146,83 @@
                                     <div class="col-6">
                                         <table class="table">
                                             <thead>
-                                                <th class="row">Data inizio</th>
-                                                <th>ROI</th>
+                                                <th class="row d-none d-md-inline-block">Data inizio</th>
+                                                <th class="d-none d-md-inline-block">ROI</th>
                                                 <th>Stato</th>
                                                 <th>Azioni</th>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                  <td class="row">15 Feb 2021</td>
-                                                  <td>20%</td>
-                                                  <td>Done</td>
-                                                  <td>#</td>
+                                                  <td class="row d-none d-md-inline-block">15 Feb 2021</td>
+                                                  <td class="d-none d-md-inline-block">20%</td>
+                                                  <td><button type="button" class="btn btn-success">Done</button></td>
+                                                  <td>
+                                                    <i class="fa-solid fa-pen px-1"></i>
+                                                    <i class="fa-solid fa-trash"></i>
+                                                  </td>
                                                 </tr>
                                                 <tr>
-                                                  <td class="row">16 Feb 2021</td>
-                                                  <td>20%</td>
-                                                  <td>Done</td>
-                                                  <td>#</td>
+                                                  <td class="row d-none d-md-inline-block">16 Feb 2021</td>
+                                                  <td class="d-none d-md-inline-block">20%</td>
+                                                  <td><button type="button" class="btn btn-success">Done</button></td>
+                                                  <td>
+                                                    <i class="fa-solid fa-pen px-1"></i>
+                                                    <i class="fa-solid fa-trash"></i>
+                                                  </td>
                                                 </tr>
                                                 <tr>
-                                                  <td class="row">17 Feb 2021</td>
-                                                  <td>20%</td>
-                                                  <td>Done</td>
-                                                  <td>#</td>
+                                                  <td class="row d-none d-md-inline-block">17 Feb 2021</td>
+                                                  <td class="d-none d-md-inline-block">20%</td>
+                                                  <td><button type="button" class="btn btn-warning">Process</button></td>
+                                                  <td>
+                                                    <i class="fa-solid fa-pen px-1"></i>
+                                                    <i class="fa-solid fa-trash"></i>
+                                                  </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="row">18 Feb 2021</td>
-                                                    <td>20%</td>
-                                                    <td>Done</td>
-                                                    <td>#</td>
+                                                    <td class="row d-none d-md-inline-block">18 Feb 2021</td>
+                                                    <td class="d-none d-md-inline-block">20%</td>
+                                                    <td><button type="button" class="btn btn-success">Done</button></td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pen px-1"></i>
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </td>
                                                   </tr>
                                                   <tr>
-                                                    <td class="row">19 Feb 2021</td>
-                                                    <td>20%</td>
-                                                    <td>Done</td>
-                                                    <td>#</td>
+                                                    <td class="row d-none d-md-inline-block">19 Feb 2021</td>
+                                                    <td class="d-none d-md-inline-block">20%</td>
+                                                    <td><button type="button" class="btn btn-danger">Failed</button></td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pen px-1"></i>
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </td>
                                                   </tr>
                                                   <tr>
-                                                    <td class="row">20 Feb 2021</td>
-                                                    <td>20%</td>
-                                                    <td>Done</td>
-                                                    <td>#</td>
+                                                    <td class="row d-none d-md-inline-block">20 Feb 2021</td>
+                                                    <td class="d-none d-md-inline-block">20%</td>
+                                                    <td><button type="button" class="btn btn-success">Done</button></td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pen px-1"></i>
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </td>
                                                   </tr>
                                                   <tr>
-                                                    <td class="row">21 Feb 2021</td>
-                                                    <td>20%</td>
-                                                    <td>Done</td>
-                                                    <td>#</td>
+                                                    <td class="row d-none d-md-inline-block">21 Feb 2021</td>
+                                                    <td class="d-none d-md-inline-block">20%</td>
+                                                    <td><button type="button" class="btn btn-danger">Failed</button></td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pen px-1"></i>
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </td>
                                                   </tr>
                                                   <tr>
-                                                    <td class="row">22 Feb 2021</td>
-                                                    <td>20%</td>
-                                                    <td>Done</td>
-                                                    <td>#</td>
+                                                    <td class="row d-none d-md-inline-block">22 Feb 2021</td>
+                                                    <td class="d-none d-md-inline-block">20%</td>
+                                                    <td><button type="button" class="btn btn-success">Done</button></td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pen px-1"></i>
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </td>
                                                   </tr>
                                             </tbody>
                                         </table>
@@ -196,6 +231,8 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!--FAQ-->
                         <div class="col-12 mt-3">
                             <div class="card">
                                 <h4 class="card-header">
@@ -205,13 +242,13 @@
                                     <table class="table">
                                         <tbody>
                                           <tr>
-                                            <td>Come aggiungere un nuovo studente?</td>
+                                            <td>Come aggiungere un nuovo studente? <i class="fa-solid fa-chevron-down"></i></td>
                                           </tr>
                                           <tr>
-                                            <td>Come posso accedere alle informazioni del mio account?</td>
+                                            <td>Come posso accedere alle informazioni del mio account? <i class="fa-solid fa-chevron-down"></i></td>
                                           </tr>
                                           <tr>
-                                            <td>Posso usare questa dashboard da mobile?</td>
+                                            <td>Posso usare questa dashboard da mobile? <i class="fa-solid fa-chevron-down"></i></td>
                                           </tr>
                                         </tbody>
                                       </table>
@@ -219,6 +256,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!--Todo-->
                     <div class="col-12 col-lg-4">
                         <div class="col-12 mt-3">
                             <div class="card">
@@ -232,6 +271,8 @@
                                 </ul>
                               </div>
                         </div>
+
+                        <!--Statistiche-->
                         <div class="col-12 mt-3 mb-3">
                             <div class="card">
                                 <img src="./img/stats.jpeg" class="card-img-top" alt="stats image">

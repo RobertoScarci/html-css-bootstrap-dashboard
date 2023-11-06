@@ -3,7 +3,13 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* header */
 
+.second-logo{
+    width: 30px;
+}
+
+/* Aside */
 aside{
     flex-direction: column;
     height: calc(100vh - 60px);
@@ -14,12 +20,34 @@ aside{
     background-image: url(../img/sidebar-bg.png);
 }
 
+aside i{
+    font-size: 15px;
+    padding-right: .5rem;
+}
+
+.small{
+    font-size: 25px;
+    height: 30px;
+}
+
+.my_padding{
+    padding-top: 28rem;
+}
+
+/* header main */
 #header-main{
     background-color: #1C71E8;
 }
 
+.card button{
+    font-size: 12px;
+    height: 17px;
+    width: 70px;
+    line-height: .3;
+}
+
 #boolean{
-    height: 200px;
+    height: 150px;
     background-color: #1C71E8;
 }
 
@@ -47,14 +75,9 @@ aside{
     color: #5A5858;
 }
 
-
-aside i{
-    font-size: 15px;
-    padding-right: .5rem;
-}
-
-main {
-    width: calc(100vw - 150px);
+/* Main */
+main{
+    width: calc(100vw - 80px);
     height: calc(100vh - 60px);
     overflow-y: auto;
 }
@@ -63,3 +86,15 @@ li{
     list-style-type: none;
 }
 
+
+@media screen and (max-width: 992px){
+    aside{
+        width: 50px;
+    }
+
+    main{
+        width: calc(100vw - 50px);
+        height: calc(100vh - 60px);
+        overflow-y: auto;
+    }
+}
