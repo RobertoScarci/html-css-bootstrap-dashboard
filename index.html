@@ -16,31 +16,70 @@
     
     <nav class="navbar navbar-expand-lg bg-body-tertiary"">
         <div class="container-fluid m-2">
-            <img src="./img/logo.svg" alt="Logo Boolean">
-            <div class="container-fluid">
-                <span class="navbar-text rounded" style="background-color: #E5E5E5;">
-                  Prova a cercare: Lezioni di Laravel
-                </span>
+
+            <div>
+                <img src="./img/mobile-logo.png" alt="Logo mobile Boolean" class="logo d-lg-none">
+                <img src="./img/logo.svg" alt="Logo desktop Boolean" class="d-none d-lg-inline-block">
+            </div>
+
+            <div class="search input-group px-2">
+                <span class="input-group-text my_search"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input type="text" class="form-control my_input" placeholder="Prova a cercare: Lezioni di Laravel">
+            </div>
+
+            <div class="button mt-3 mx-1">
+                <ul class="d-flex align-items-center">
+                    <li class="d-none d-lg-inline-block pe-3"><i class="fa-solid fa-list"></i></li>
+                    <li class="d-none d-lg-inline-block pe-3"><i class="fa-solid fa-circle-question"></i></li>
+                    <li class="d-none d-lg-inline-block pe-3"><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                    <li class="pe-3"><i class="fa-solid fa-bell"></i></li>
+                </ul>
             </div>
         </div>
     </nav>
 
     <section class="d-flex">
 
-        <aside></aside>
+        <aside>
+            <ul class="text-white mt-4">
+                <li> Home</li>
+                <li>Stats</li>
+                <li>Signals</li>
+                <li>Admin</li>
+            </ul>
+        </aside>
 
     <main>
         <header id="header-main" class="col-12">
-            <h1>
-                A
-            </h1>
-        </header>
             <div class="container">
+                <div class="row text-white">
+                    <div class="col-6 mt-3">
+                        <h2>
+                            Boolean
+                        </h2>
+                    </div>
+                    <div class="col-4 mt-2">
+                        <p>
+                            Studenti online negli ultimi 30 minuti
+                        </p>
+                        <h2>
+                            125
+                        </h2>
+                    </div>
+                    <div class="col-2 mt-3">
+                        <p>
+                            Nuovo studente
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+            <div class="container overflow-scroll">
                 <div class="row">
                     <div class="col-12 col-lg-8">
                         <div class="col-12 mt-3">
                             <div class="card">
-                                <h3 class="card-header">Prossime classi</h3>
+                                <h4 class="card-header">Prossime classi</h4>
                                 <div class="card-body">
                                    <div class="row">
                                     <div class="col-6">
@@ -142,9 +181,9 @@
                         </div>
                         <div class="col-12 mt-3">
                             <div class="card">
-                                <h3 class="card-header">
+                                <h4 class="card-header">
                                   F.A.Q.
-                                </h3>
+                                </h4>
                                 <div class="card-body">
                                     <table class="table">
                                         <tbody>
@@ -166,9 +205,9 @@
                     <div class="col-12 col-lg-4">
                         <div class="col-12 mt-3">
                             <div class="card">
-                                <div class="card-header">
+                                <h4 class="card-header">
                                   Todo
-                                </div>
+                                </h4>
                                 <ul class="list-group list-group-flush">
                                   <li class="list-group-item"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> Kickoff nuove classi</li>
                                   <li class="list-group-item"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> Lezioni su Bootstrap 5 in classe #75</li>
@@ -176,7 +215,7 @@
                                 </ul>
                               </div>
                         </div>
-                        <div class="col-12 mt-3">
+                        <div class="col-12 mt-3 mb-3">
                             <div class="card">
                                 <img src="./img/stats.jpeg" class="card-img-top" alt="stats image">
                                 <div class="card-body">

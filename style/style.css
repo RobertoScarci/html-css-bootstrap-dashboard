@@ -1,3 +1,9 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
 aside{
     flex-direction: column;
     height: calc(100vh - 60px);
@@ -18,6 +24,28 @@ aside{
     height: 200px;
     background-color: #1C71E8;
 }
+
+.my_search{
+    background-color: #E5E5E5;
+}
+
+.my_input{
+    background-color: #E5E5E5;
+}
+
 .navbar{
     height: 60px;
 }
+
+nav img{
+    width: 100%;
+}
+
+.button{
+    color: #5A5858;
+}
+
+li{
+    list-style-type: none;
+}
+
