@@ -9,6 +9,23 @@ body {
     width: 30px;
 }
 
+.my-small{
+    padding-bottom: 2rem;
+}
+
+.search{
+    padding-left: 1rem;
+}
+
+.my-big{
+    padding-right: 2rem;
+}
+
+.my_bell{
+    padding-left: 3rem;
+    padding-bottom: 2rem;
+}
+
 /* Aside */
 aside{
     flex-direction: column;
@@ -109,5 +126,5 @@ li{
         width: 70%;
     }
 
-    
+
 }
