@@ -42,8 +42,8 @@ aside i{
 .card button{
     font-size: 12px;
     height: 17px;
-    width: 70px;
-    line-height: .3;
+    width: 75px;
+    line-height: .1;
 }
 
 #boolean{
@@ -97,4 +97,17 @@ li{
         height: calc(100vh - 60px);
         overflow-y: auto;
     }
+
+    .search{
+        width: 80%;
+        padding-bottom: 2rem;
+    }
+}
+
+@media screen and(max-width: 768px){
+    .search{
+        width: 70%;
+    }
+
+    
 }

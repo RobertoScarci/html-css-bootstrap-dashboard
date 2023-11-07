@@ -15,10 +15,11 @@
 <body>
     
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary"">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid m-2">
 
             <div>
+                <img src="./img/mobile-logo.png" alt="Logo Boolean mobile" width="40rem" class="d-lg-none">
                 <img src="./img/logo.svg" alt="Logo desktop Boolean" class="d-none d-lg-inline-block">
             </div>
 
@@ -27,12 +28,12 @@
                 <input type="text" class="form-control my_input" placeholder="Prova a cercare: Lezioni di Laravel">
             </div>
 
-            <div class="button mt-3 mx-1">
+            <div class="button mt-3 px-2">
                 <ul class="d-flex align-items-center">
                     <li class="d-none d-lg-inline-block pe-3"><i class="fa-solid fa-list"></i></li>
                     <li class="d-none d-lg-inline-block pe-3"><i class="fa-solid fa-circle-question"></i></li>
                     <li class="d-none d-lg-inline-block pe-3"><i class="fa-solid fa-ellipsis-vertical"></i></li>
-                    <li class="d-none d-lg-inline-block"><i class="fa-solid fa-bell"></i></li>
+                    <li><i class="fa-solid fa-bell"></i></li>
                 </ul>
             </div>
         </div>
@@ -97,14 +98,14 @@
                             Nuovo studente
                             <button class="btn btn-primary border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">+</button>
 
-                            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
                               <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">Iscriviti</button>
+                                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Inserisci un nuovo studente</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                               </div>
                               <div class="offcanvas-body">
                                 <p>Nome</p>
-                                <p>Cognome</p>
+                                <p><input type="text" class="rounded"> <input type="text" name="" id="" class="rounded"></p>
                               </div>
                             </div>
                         </p>
